@@ -8,5 +8,6 @@ router.route('/').get((req, res) => {
         message: 'Tipo de cambio API v1',
     });
 });
+router.use('/', require('./tipoCambioRouter'));
 
 module.exports = router;
